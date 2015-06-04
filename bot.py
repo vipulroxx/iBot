@@ -45,7 +45,7 @@ def commands(nick,channel,message):
       
        
 server = "irc.freenode.net" # Server
-channel = "#jklmn" # Channel
+channel = "#jklmn" # Channel #add channel name
 botnick = "i_bot_" # Your bots nick
 
 
