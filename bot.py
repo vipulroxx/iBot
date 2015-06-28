@@ -3,6 +3,8 @@ import socket
 def commands(nick,channel,message):
    if message.find(botnick+': how are you!')!=-1:
       ircsock.send('PRIVMSG %s :%s: I am awesome!... How about you?\r\n' % (channel,nick))
+   elif message.find(botnick+': How are you?')!=-1:
+      ircsock.send('PRIVMSG %s :%s: https://github.com/vipulroxx/iBot/blob/master/Commands\r\n' % (channel,nick))
    elif message.find(botnick+': show commands!')!=-1:
       ircsock.send('PRIVMSG %s :%s: https://github.com/vipulroxx/iBot/blob/master/Commands\r\n' % (channel,nick))
    elif message.find(botnick+': shut up!')!=-1:
